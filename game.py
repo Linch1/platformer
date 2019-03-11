@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 from random import *
 from math import *
 import sys
-from game_ import *
+from functions import *
 import threading
 from threading import Timer
 from msvcrt import getch
