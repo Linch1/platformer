@@ -85,7 +85,7 @@ class KeyboardListner:
                 if self.player.get_jump_status():
                     if self.ARROW_UP in self.key_list:
                         self.player.jump_off()
-                        self.player.move_up(gravity=20, jump=13, jump_speed=0.03)
+                        self.player.move_up(gravity=25, jump=20, jump_speed=0.1)
                         self.key_list.remove(self.ARROW_UP)
                         if self.SPACE in self.key_list:
                             shot_function()
