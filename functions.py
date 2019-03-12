@@ -426,7 +426,7 @@ class Entity:
             self.y2 = self.y1 + self._height
 
             self.apply_movement(self.x1, self.y1, self.x2, self.y2)
-            self.master.after(5, lambda: self.move_up(time=time + jump_speed, gravity=gravity, jump=jump, jump_speed=jump_speed))
+            Timer(40/1000, lambda: self.move_up(time=time + jump_speed, gravity=gravity, jump=jump, jump_speed=jump_speed)).start()
         else:
             self.jump_on()
             self.gravity_active()
