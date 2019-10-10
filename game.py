@@ -8,7 +8,6 @@ import sys
 from functions import *
 import threading
 from threading import Timer
-from msvcrt import getch
 
 
 def make_image(path):
